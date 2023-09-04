@@ -13,7 +13,13 @@ body {
 
 /* Header section  */
 .header {
-    padding-top: 2%;
+    padding: 2% 0 2% 0;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
+    /* z-index: -1; */
 }
 
 .navbar {
@@ -67,7 +73,7 @@ body {
 
 /* Hero section  */
 .hero {
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 .hero_content {
@@ -134,17 +140,52 @@ body {
 .image .label {
     padding: 2%;
     text-align: center;
+    padding-bottom: 3.5rem;
 }
 
 .menu {
-    /* text-align: center; */
-    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 .menu h3 {
+    width: 11%;
     margin: auto;
-    width: 8%;
-    height: 10%;
-    background-color: palevioletred;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 0.5% 0 0.5% 0;
+}
+
+/* PRODUCTS DISPLAY  */
+
+.plain_container {
+    margin: auto;
+    width: 80%;
+    height: 20vh;
+    background-color: brown;
+}
+
+.display_images img {
+    width: 100%;
+}
+
+.display_images {
+    /* position: absolute; */
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5%;
+    padding: 0 15% 5% 15%;
+}
+
+/* delivery section  */
+.delivery_container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 3rem;
+}
+
+.delivery_content {
+    border-right: 1.8px solid black;
 }
