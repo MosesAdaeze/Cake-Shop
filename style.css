@@ -18,7 +18,7 @@ body {
     bottom: 0;
     top: 0;
     background-color: white;
-    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
+    /* box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2); */
     /* z-index: -1; */
 }
 
@@ -73,7 +73,7 @@ body {
 
 /* Hero section  */
 .hero {
-    /* padding: 2%; */
+    padding: 0 2% 2% 2%;
 }
 
 .hero_content {
@@ -180,6 +180,7 @@ body {
 
 /* delivery section  */
 .delivery_container {
+    padding: 0 10% 0 10%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -189,3 +190,43 @@ body {
 .delivery_content {
     border-right: 1.8px solid black;
 }
+
+ /* --------------- FOOTER SECTION -----------------  */
+
+ #footer {
+    margin: 2% 2% 0 2%;
+    background-color: rgb(252, 208, 222);
+    color: rgb(78, 9, 32);
+    /* display: flex; */
+ }
+
+ .footer_container {
+    padding: 4%;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .footer_list h2 {
+    padding-bottom: 2.2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+ }
+
+ .footer_list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+ }
+
+ .footer_list ul a {
+    text-decoration: none;
+    color: rgb(78, 9, 32);
+ }
+
+ .footer_list ul a:hover {
+    text-decoration: underline;
+ }
+ 
