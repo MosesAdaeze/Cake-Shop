@@ -203,11 +203,11 @@ body {
     padding: 4% 0 4% 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
  }
 
 .footer_content {
     display: flex;
-    justify-content: space-between;
     gap: 5rem;
 }
 
@@ -224,6 +224,7 @@ body {
     gap: 0.8rem;
     text-transform: capitalize;
     font-size: 1rem;
+    font-family: 'Comic Neue', cursive;
  }
 
  .footer_list ul a {
@@ -235,3 +236,15 @@ body {
     text-decoration: underline;
  }
  
+ .footer_form input {
+    text-align: center;
+    width: 350px;
+    height: 45px;
+    margin-bottom: 4%;
+ }
+
+ .btn button {
+    text-transform: uppercase;
+    width: 350px;
+    height: 45px;
+ }
