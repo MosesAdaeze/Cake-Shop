@@ -197,19 +197,24 @@ body {
     margin: 2% 2% 0 2%;
     background-color: rgb(252, 208, 222);
     color: rgb(78, 9, 32);
-    /* display: flex; */
  }
 
  .footer_container {
-    padding: 4%;
+    padding: 4% 0 4% 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
  }
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
 
  .footer_list h2 {
     padding-bottom: 2.2rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
  }
 
  .footer_list ul {
@@ -218,7 +223,7 @@ body {
     flex-direction: column;
     gap: 0.8rem;
     text-transform: capitalize;
-    font-size: 0.9rem;
+    font-size: 1rem;
  }
 
  .footer_list ul a {
