@@ -159,10 +159,11 @@ body {
 /* PRODUCTS DISPLAY  */
 
 .plain_container {
-    margin: auto;
+    margin: 0 20% 0 10%;
     width: 80%;
-    height: 20vh;
-    background-color: brown;
+    height: 30vh;
+    background-color: rgb(245, 235, 235);
+    position: absolute;
 }
 
 .display_images img {
@@ -170,12 +171,14 @@ body {
 }
 
 .display_images {
-    /* position: absolute; */
-    z-index: 1;
+    position: relative;
+    top: 70px;
+    right: 0;
+    left: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5%;
-    padding: 0 15% 5% 15%;
+    padding: 0 15% 10% 15%;
 }
 
 /* delivery section  */
@@ -244,6 +247,7 @@ body {
  }
 
  .btn button {
+    cursor: pointer;
     text-transform: uppercase;
     width: 350px;
     height: 45px;
