@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Shop</title>
+    <link rel="website icon" type="png" href="images/shop.png" >
     <!-- Links  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
@@ -11,16 +12,16 @@
 <body>
     <!-- Header  -->
     <!-- NavBar -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="navbar">
             <div class="brand-name1">
                 <!-- <img src="images/shop.png" alt=""> -->
                 <h1 class="auto-style">The Cake Shop</h1>
             </div>
             <ul class="nav">
-                <li><a class="active" href="#">home</a></li>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#hero" class="active">home</a></li>
+                <li><a href="#display_container">shop</a></li>
+                <li><a href="#bestselling">contact</a></li>
                 <ul class="nav-social">
                     <li><a href="#">instagram</a></li>
                     <li><a href="#">youtube</a></li>
@@ -43,7 +44,7 @@
     </header>
 
     <!-- Hero Section  -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero_content">
             <h1>homemade sweets</h1>
 
@@ -52,7 +53,7 @@
     </section>
 
     <!-- primary content  -->
-    <section class="bestselling">
+    <section class="bestselling" id="bestselling">
         <div class="bestselling_content">
             <div class="content_title">
                 <h2>Best Sellers</h2>
@@ -87,10 +88,12 @@
         </div>
     </section>
 
+    <!------------------- ENd  primary content --------------------   -->
+
     <div class="menu"><h3>All Menu</h3> </div>
 
     <!-- Product display  -->
-    <section class="display_container">
+    <section id="display_container" class="display_container">
         <div class="display_content">
             <div class="plain_container"></div>
             <div class="display_images">
@@ -103,6 +106,7 @@
             </div>
         </div>
     </section>
+<!-- ---------end product display ------------  -->
 
     <!-- steps delivery  -->
     <section class="delivery_container">
@@ -119,6 +123,8 @@
             <h2>New pic up service</h2>
         </div>
     </section>
+      <!-- steps delivery  -->
+
 
     <section id="footer">
         <div class="footer_container">
@@ -126,7 +132,7 @@
                 <div class="footer_list">
                     <h2>shop</h2>
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li class="active"><a href="#">About</a></li>
                         <li><a href="#">FaQ</a></li>
                         <li><a href="#">Store policy</a></li>
                         <li><a href="#">contact me</a></li>
@@ -156,6 +162,20 @@
             </div>
         </div>
     </section>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+    <!-- <script>
+        $('.navbar').carousel({
+        interval: 2000;
+        }),
+      
+        $(".nav").on("click", function(e){
+        $("li.nav").removeClass("active");
+        $(this).addClass("active");
+         });
+    </script> -->
+
 
     <script src="script.js"></script>
 </body>

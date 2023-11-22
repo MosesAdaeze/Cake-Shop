@@ -12,6 +12,7 @@ body {
     font-family: 'Ysabeau SC', sans-serif;
 }
 
+
 /* Header section  */
 .header {
     padding: 1.5% 0 0 0;
@@ -176,9 +177,15 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 
+.label {
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
 .label p {
     font-weight: 600;
     font-size: 1.3rem;
+    color: palevioletred;
 }
 
 .bestselling_imag {
@@ -209,13 +216,26 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 844px) {
     .bestselling_imag {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img {
+        width: 80%;
+    }
+
+    .label {
+        text-align: center;
+    }
+    /* .bestselling_imag {
         grid-template-columns: repeat(1, 1fr);
     }
     .image img {
         width: 50%;
-    }
+    } */
 }
 
 
