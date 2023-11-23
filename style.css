@@ -232,6 +232,10 @@ body {
 
 /* ---- BESTSELLERS SECTION MEDIA QUERY -------------  */
 @media (max-width: 1128px) {
+    .image {
+        width: 50%;
+    }
+
     .image img {
         width: 100%;
     }
