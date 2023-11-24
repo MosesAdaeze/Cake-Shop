@@ -36,6 +36,7 @@ body {
     padding: 1.5% 0 1.5% 0;
     position: fixed;
     background-color: white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
 }
 
 .brand-name1 {
@@ -85,6 +86,10 @@ body {
 
 /* ---- HEADER SECTION MEDIA QUERY -------------  */
 @media (min-width: 1128px){
+    .header.shadow {
+        padding: 1.5% 0 3% 0;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-around;
@@ -323,7 +328,6 @@ body {
     justify-content: space-around;
     align-items: center;
     max-width: 1300px;
-    background-color: #088178;
 }
 
 .about_image{
@@ -400,7 +404,7 @@ body {
 
 
  /* --------------- FOOTER SECTION -----------------  */
- #footer {
+ .footer {
     margin: 2% 2% 0 2%;
     background-color: rgb(252, 208, 222);
     color: rgb(78, 9, 32);
