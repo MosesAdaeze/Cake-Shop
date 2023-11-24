@@ -82,6 +82,15 @@ body {
     font-size: 1.3rem;
 }
 
+.nav {
+    padding-top: 2%;
+}
+
+.nav-social {
+    border-left: solid 2px #088178;
+    padding: 0 3% 0 3%;
+}
+
 /* ---- HEADER SECTION MEDIA QUERY -------------  */
 @media (min-width: 1128px){
     .navbar {
